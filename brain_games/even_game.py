@@ -7,7 +7,7 @@ def show_game_rules():
     print('Answer "yes" if number even otherwise answer "no".')
 
 
-def is_answer_correct(answer, number):
+def is_answer_correct(number, answer):
     return (
         (number % 2 == 0 and answer == 'yes') or
         (number % 2 == 1 and answer == 'no')
@@ -18,18 +18,25 @@ def get_opposite_answer(answer):
     return 'yes' if answer == 'no' else 'no'
 
 
-def start_game_loop(user_name):
+def ask_question():
     LOWEST_RAND_NUM = 1
     BIGGEST_RAND_NUM = 100
+
+    asked_number = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
+    print('Question: %s' % asked_number)
+    user_answer = prompt.string('Your answer: ')
+
+    return asked_number, user_answer
+
+
+def start_game_loop(user_name):
     ANSWERS_TO_WIN_COUNT = 3
     correct_answers_count = 0
 
     while correct_answers_count < ANSWERS_TO_WIN_COUNT:
-        number = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
-        print('Question: %s' % number)
-        user_answer = prompt.string('Your answer: ')
+        asked_number, user_answer = ask_question()
 
-        if is_answer_correct(user_answer, number):
+        if is_answer_correct(asked_number, user_answer):
             correct_answers_count += 1
             print('Correct!')
         else:
