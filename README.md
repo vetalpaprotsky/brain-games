@@ -4,4 +4,4 @@
 ![Python CI](https://github.com/vetalpaprotsky/brain-games/workflows/Python%20CI/badge.svg)
 
 ## Even
-[![asciicast](https://asciinema.org/a/mPKwk0ZDQA9KASZL50ILvJ3nS.svg)](https://asciinema.org/a/mPKwk0ZDQA9KASZL50ILvJ3nS)
+[![asciicast](https://asciinema.org/a/jVlUXOS3CZvVvm9DOVGT2aDrW.svg)](https://asciinema.org/a/jVlUXOS3CZvVvm9DOVGT2aDrW)
