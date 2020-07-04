@@ -14,8 +14,8 @@ def is_answer_correct(number, answer):
     )
 
 
-def get_opposite_answer(answer):
-    return 'yes' if answer == 'no' else 'no'
+def get_correct_answer(number):
+    return 'yes' if number % 2 == 0 else 'no'
 
 
 def ask_question():
@@ -45,7 +45,7 @@ def start_game_loop(user_name):
                 "Correct answer was '%s'\n"
                 "Let's try again, %s!"
             )
-            correct_answer = get_opposite_answer(user_answer)
+            correct_answer = get_correct_answer(asked_number)
             print(message % (user_answer, correct_answer, user_name))
 
     print('Congratulations, %s!' % user_name)
