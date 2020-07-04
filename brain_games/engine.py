@@ -3,7 +3,7 @@ import prompt
 
 
 def ask_question_to_user(question):
-    print('Question: %s' % question)
+    print('Question: {}'.format(question))
     return prompt.string('Your answer: ').strip().lower()
 
 
@@ -13,21 +13,17 @@ def start_game_loop(game, user_name):
 
     while correct_answers_count < ANSWERS_TO_WIN_COUNT:
         question, correct_answer = game.get_question_and_correct_answer()
-        correct_answer = str(correct_answer)
         user_answer = ask_question_to_user(question)
 
-        if user_answer == correct_answer:
+        if user_answer == str(correct_answer):
             correct_answers_count += 1
             print('Correct!')
         else:
-            message = (
-                "'%s' is wrong answer ;(. "
-                "Correct answer was '%s'\n"
-                "Let's try again, %s!"
-            )
-            print(message % (user_answer, correct_answer, user_name))
+            message = "'{}' is wrong answer ;(. Correct answer was '{}'\n" \
+                "Let's try again, {}!"
+            print(message.format(user_answer, correct_answer, user_name))
 
-    print('Congratulations, %s!' % user_name)
+    print('Congratulations, {}!'.format(user_name))
 
 
 def start(game):

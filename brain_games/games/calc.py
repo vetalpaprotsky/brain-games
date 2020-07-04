@@ -11,7 +11,7 @@ def get_question_and_correct_answer():
     first_operand = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
     second_operand = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
     operation = random.choice(OPERATIONS)
-    question = '%d %s %d' % (first_operand, operation, second_operand)
+    question = '{} {} {}'.format(first_operand, operation, second_operand)
 
     if operation == '+':
         correct_answer = first_operand + second_operand
