@@ -1,4 +1,10 @@
 import brain_games.cli as cli
+import prompt
+
+
+def ask_question_to_user(question):
+    print('Question: %s' % question)
+    return prompt.string('Your answer: ').strip().lower()
 
 
 def start_game_loop(game, user_name):
@@ -6,7 +12,9 @@ def start_game_loop(game, user_name):
     correct_answers_count = 0
 
     while correct_answers_count < ANSWERS_TO_WIN_COUNT:
-        user_answer, correct_answer = game.ask_question()
+        question, correct_answer = game.get_question_and_correct_answer()
+        correct_answer = str(correct_answer)
+        user_answer = ask_question_to_user(question)
 
         if user_answer == correct_answer:
             correct_answers_count += 1
@@ -24,8 +32,7 @@ def start_game_loop(game, user_name):
 
 def start(game):
     cli.show_greeting_message()
-    game.show_game_rules()
-    print()
+    print(game.RULES, '\n')
     user_name = cli.welcome_user()
     print()
     start_game_loop(game, user_name)
