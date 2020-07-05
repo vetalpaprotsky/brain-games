@@ -3,5 +3,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/49a4a81a5cd353407533/maintainability)](https://codeclimate.com/github/vetalpaprotsky/brain-games/maintainability)
 ![Python CI](https://github.com/vetalpaprotsky/brain-games/workflows/Python%20CI/badge.svg)
 
+## Installation
+
+[![asciicast](https://asciinema.org/a/O6ESbaJR1hTTSIIFJG3jF190Q.svg)](https://asciinema.org/a/O6ESbaJR1hTTSIIFJG3jF190Q)
+
 ## Even
-[![asciicast](https://asciinema.org/a/jVlUXOS3CZvVvm9DOVGT2aDrW.svg)](https://asciinema.org/a/jVlUXOS3CZvVvm9DOVGT2aDrW)
+[![asciicast](https://asciinema.org/a/JS2uW7hURfIP2oNQqu5cZBsb7.svg)](https://asciinema.org/a/JS2uW7hURfIP2oNQqu5cZBsb7)
+
+## Calculator
+[![asciicast](https://asciinema.org/a/qyvyfYPyj9hwHctQGvLUTMLv4.svg)](https://asciinema.org/a/qyvyfYPyj9hwHctQGvLUTMLv4)
