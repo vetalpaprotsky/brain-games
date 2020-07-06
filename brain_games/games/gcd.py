@@ -7,20 +7,24 @@ RULES = 'Find the greatest common divisor of given numbers.'
 
 def generate_numbers():
     '''
-    Try to generate numbers which have greatest common divisor greater than one.
+    The function tries to generate numbers which have the greatest common
+    divisor greater than one. Most likely that greatest common divisor of
+    two random numbers is one. That makes the game a bit boring. That's why
+    this function has more than one attempt to generate numbers which might
+    be more interesting.
     '''
 
     LOWEST_RAND_NUM = 1
     BIGGEST_RAND_NUM = 100
 
     first_number = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
-    attemps_count = 5
+    attemps_left = 5
 
-    while attemps_count > 0:
+    while attemps_left > 0:
         second_number = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
         if math.gcd(first_number, second_number) > 1:
             break
-        attemps_count -= 1
+        attemps_left -= 1
 
     return first_number, second_number
 
