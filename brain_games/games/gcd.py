@@ -12,6 +12,7 @@ def generate_numbers():
 
     LOWEST_RAND_NUM = 1
     BIGGEST_RAND_NUM = 100
+
     first_number = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
     attemps_count = 5
 
