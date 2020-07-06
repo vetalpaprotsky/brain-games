@@ -16,5 +16,8 @@
 ## GCD
 [![asciicast](https://asciinema.org/a/7U9GR0XTC1hqwK9DIy0SRmYg9.svg)](https://asciinema.org/a/7U9GR0XTC1hqwK9DIy0SRmYg9)
 
+## Prime
+[![asciicast](https://asciinema.org/a/t6ZrO99xKpvBRrsZ4htHBfWet.svg)](https://asciinema.org/a/t6ZrO99xKpvBRrsZ4htHBfWet)
+
 ## Progression
 [![asciicast](https://asciinema.org/a/Hamj30tuqbHJDdNpBEGBVa4W5.svg)](https://asciinema.org/a/Hamj30tuqbHJDdNpBEGBVa4W5)
