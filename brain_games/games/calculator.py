@@ -8,7 +8,6 @@ def get_question_and_correct_answer():
     LOWEST_RAND_NUM = 1
     BIGGEST_RAND_NUM = 25
     OPERATIONS = ['+', '-', '*']
-
     first_operand = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
     second_operand = random.randint(LOWEST_RAND_NUM, BIGGEST_RAND_NUM)
     operation = random.choice(OPERATIONS)

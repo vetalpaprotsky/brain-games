@@ -8,7 +8,6 @@ def generate_progression(length):
     PROG_STEP = random.randint(1, 10)
     PROG_FIRST_NUM = random.randint(1, 100)
     PROG_LAST_NUM = PROG_FIRST_NUM + length * PROG_STEP
-
     progression = list(range(PROG_FIRST_NUM, PROG_LAST_NUM, PROG_STEP))
 
     return progression
