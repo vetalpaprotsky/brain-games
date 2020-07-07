@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vetalpaprotsky_brain_games"
-version = "0.7.1"
+version = "0.7.2"
 description = "Brain Games is a set of math mini-games."
 license = "MIT"
 readme = "README.md"
