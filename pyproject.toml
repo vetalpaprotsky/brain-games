@@ -3,6 +3,7 @@ name = "vetalpaprotsky_brain_games"
 version = "0.7.1"
 description = "Brain Games is a set of math mini-games."
 license = "MIT"
+readme = "README.md"
 authors = ["Vitalii Paprotskyi <vetalpaprotsky@gmail.com>"]
 repository = "https://github.com/vetalpaprotsky/brain-games"
 packages = [
