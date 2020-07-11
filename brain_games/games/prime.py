@@ -37,8 +37,7 @@ def generate_number():
 
 
 def get_question_and_correct_answer():
-    number, number_is_prime = generate_number()
+    question, number_is_prime = generate_number()
     correct_answer = 'yes' if number_is_prime else 'no'
 
-    # The number itself is a question
-    return number, correct_answer
+    return question, correct_answer
