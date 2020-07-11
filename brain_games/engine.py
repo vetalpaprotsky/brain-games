@@ -26,7 +26,7 @@ def start_game_loop(game, user_name):
     print('Congratulations, {}!'.format(user_name))
 
 
-def start(game):
+def play(game):
     cli.show_greeting_message()
     print(game.DESCRIPTION, '\n')
     user_name = cli.welcome_user()

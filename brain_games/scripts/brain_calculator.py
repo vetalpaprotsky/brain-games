@@ -3,7 +3,7 @@ import brain_games.games.calculator
 
 
 def main():
-    brain_games.engine.start(brain_games.games.calculator)
+    brain_games.engine.play(brain_games.games.calculator)
 
 
 if __name__ == '__main__':
