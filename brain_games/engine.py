@@ -19,9 +19,10 @@ def start_game_loop(game, user_name):
             correct_answers_count += 1
             print('Correct!')
         else:
-            message = "'{}' is wrong answer ;(. Correct answer was '{}'\n" \
-                "Let's try again, {}!"
-            print(message.format(user_answer, correct_answer, user_name))
+            print("'{}' is wrong answer ;(. Correct answer was '{}'".format(
+                user_answer, correct_answer
+            ))
+            print("Let's try again, {}!".format(user_name))
 
     print('Congratulations, {}!'.format(user_name))
 
