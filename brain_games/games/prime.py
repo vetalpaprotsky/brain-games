@@ -6,10 +6,13 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    n = 2
-    squareRootOfNumber = math.floor(math.sqrt(number))
+    if number <= 1:
+        return False
 
-    while n <= squareRootOfNumber:
+    n = 2
+    square_root_of_number = math.floor(math.sqrt(number))
+
+    while n <= square_root_of_number:
         if number % n == 0:
             return False
         n += 1
