@@ -4,9 +4,11 @@
 ![Python CI](https://github.com/vetalpaprotsky/brain-games/workflows/Python%20CI/badge.svg)
 
 ## Installation
-Brain Games can be installed using pip. The package is published on [TestPyPI](https://test.pypi.org/) repository(not [PyPI](https://pypi.org/), as usually) so, you need to pass additional parameters to `pip install` command to make `pip` search for the package on [TestPyPI](https://test.pypi.org/) instead of [PyPI](https://pypi.org/). Note that the name of the package actually is vetalpaprotsky-brain-games. Here's the installation command:
+Brain Games can be installed using pip. The package is published on [TestPyPI](https://test.pypi.org/) repository(not [PyPI](https://pypi.org/), as usually) so, you need to pass additional parameters to `pip install` command to make pip search for the package on [TestPyPI](https://test.pypi.org/) instead of [PyPI](https://pypi.org/). Note that the name of the package is actually vetalpaprotsky-brain-games. Here's the installation command:
 
-`pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ vetalpaprotsky-brain-games`
+```
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ vetalpaprotsky-brain-games
+```
 
 To verify that the installation was successful, run `brain-games` command in the terminal. If you're not getting any errors, then everything went well.
 
