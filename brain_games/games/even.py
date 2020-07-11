@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def get_question_and_correct_answer():

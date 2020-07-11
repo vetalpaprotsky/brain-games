@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def get_question_and_correct_answer():
