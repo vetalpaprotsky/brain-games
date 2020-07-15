@@ -7,7 +7,7 @@ def ask_question_to_user(question):
     return prompt.string('Your answer: ').strip().lower()
 
 
-def start_game_loop(game, user_name):
+def play_game_loop(game, user_name):
     ANSWERS_TO_WIN_COUNT = 3
     correct_answers_count = 0
 
@@ -32,4 +32,4 @@ def play(game):
     print(game.DESCRIPTION, '\n')
     user_name = cli.welcome_user()
     print()
-    start_game_loop(game, user_name)
+    play_game_loop(game, user_name)
