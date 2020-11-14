@@ -1,7 +1,7 @@
 # Brain Games
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/49a4a81a5cd353407533/maintainability)](https://codeclimate.com/github/vetalpaprotsky/brain-games/maintainability)
-![Python CI](https://github.com/vetalpaprotsky/brain-games/workflows/Python%20CI/badge.svg)
+[![Python CI](https://github.com/vetalpaprotsky/brain-games/workflows/Python%20CI/badge.svg)](https://github.com/vetalpaprotsky/brain-games/actions)
 
 ## Installation
 Brain Games can be installed using pip. The package is published on [TestPyPI](https://test.pypi.org/) repository(not [PyPI](https://pypi.org/), as usually) so, you need to pass additional parameters to `pip install` command to make pip search for the package on [TestPyPI](https://test.pypi.org/) instead of [PyPI](https://pypi.org/). Note that the name of the package is actually vetalpaprotsky-brain-games. Here's the installation command:
